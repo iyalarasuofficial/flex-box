@@ -7,7 +7,7 @@ body {
     padding: 0px;
 }
 
-nav {
+/* nav {
     display: inline-block;
     text-align: end;
     width: 100%;
@@ -28,6 +28,29 @@ nav {
 .nav-bar-list {
     display: inline-block;
     margin-right: 30px;
+} */
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0;
+    & img {
+        width: 150px;
+            /* float: left;
+            margin-left: 250px; */
+    }
+
+}
+
+nav .nav-menus{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap:30px;
+    align-items: center;
+    display: flex;   
+
 }
 
 .curosil-card {
@@ -144,6 +167,7 @@ nav {
 
 .inner-explore {
     display: flex;
+    flex-wrap: wrap;
 
     & div {
         height: 150px;
@@ -195,3 +219,12 @@ button:hover{
      background-color: antiquewhite;
 }
 
+@media(max-width:768px){
+
+
+    .transport-sec {
+       
+        flex-wrap: wrap;
+       
+    }
+  }
